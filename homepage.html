@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dental Clinic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgba(16, 56, 56, 0.8);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            color: rgba(16, 56, 56, 0.8);
+            text-align: center;
+        }
+
+        .logout-btn {
+            padding: 10px 15px;
+            background-color: rgb(88, 150, 155);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: #9eccb7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Dental Clinic</h2>
+        <p>Here is your home page content.</p>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Perform logout operation here, e.g., clear session, redirect to login page
+            // For demonstration purpose, let's redirect to login.php
+            window.location.href = "login.php";
+        }
+    </script>
+</body>
+</html>
