@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dental Clinic</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgba(16, 56, 56, 0.8);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Remove default margin */
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            background-color: transparent;
+            color: rgba(16, 56, 56, 0.8);
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+            color: rgba(16, 56, 56, 0.8);
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-bar {
+            width: 100%;
+            background-color: #183546;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Align items horizontally */
+        }
+
+        .nav-bar a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px; /* Adjusted to leave space for header */
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header w3-padding-16">
+        <h1><strong>Dental Clinic</strong></h1>
+    </header>
+
+    <div class="nav-bar">
+        <a href="homepage.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="login.php">Logout</a>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>Welcome to Dental Clinic</h2>
+            <p>Your dental health is our priority. Explore our services and get in touch with us for the best dental care.</p>
+        </div>
+    </div>
+</body>
+</html>
