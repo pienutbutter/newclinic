@@ -1,0 +1,134 @@
+/* Style for the header and footer */
+.header, .footer {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; 
+    font-size: 24px;
+    background-color: transparent;
+    color: rgba(16, 56, 56, 0.8);
+}
+
+.header h1, .footer p {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Use Arial, sans-serif */
+    font-weight: bold; /* Make the header text bold */
+}
+
+@media only screen and (max-width: 600px) {
+    .header, .footer {
+        padding: 10px; /* Reduce padding for mobile */
+        margin-bottom: 10px; /* Reduce margin for mobile */
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+}
+
+/* Other styles from your original style.css file go below */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgba(16, 56, 56, 0.8);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    color: rgba(16, 56, 56, 0.8);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px; /* Adjust font size for desktop */
+}
+
+input {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size for desktop */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgb(88, 150, 155);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* Adjust font size for desktop */
+}
+
+button:hover {
+    background-color: #9eccb7;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+    width: 20px; /* Set width for the checkbox */
+    height: 20px; /* Set height for the checkbox */
+}
+
+.checkbox-container label {
+    margin: 0;
+}
+
+/* start sevice punya style css */
+@media only screen and (max-width: 600px) {
+    .form-container {
+        max-width: 90%;
+    }
+
+    .form-title {
+        display: block;
+        text-align: center;
+    }
+
+    label,
+    input,
+    button {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+    .w3-card-4 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .w3-container {
+        padding: 15px;
+    }
+    
+    .w3-button {
+        width: 100%;
+    }
+    
+    .w3-modal-content {
+        padding: 20px;
+    }
+}
